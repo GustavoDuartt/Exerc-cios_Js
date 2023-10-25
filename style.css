@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Alumni+Sans:wght@100&family=Bangers&family=Bebas+Neue&family=Concert+One&family=Parisienne&family=Patrick+Hand&family=Sedgwick+Ave+Display&display=swap');
+
+body {
+    font-family: "Concert One";
+    font-size: 23px;
+    letter-spacing: 1px;
+    margin: 0;
+    padding: 20px;
+    color: white;
+    cursor: pointer;
+    background-color: rgb(255, 0, 0);
+}
+
+.identificação {
+    background: white;
+    display: flex;
+    align-items: center;
+    margin-left: 2%;
+    justify-content: space-around;
+    padding: 10px;
+    color: rgb(0, 0, 0);
+    border: 5px solid rgb(255, 255, 255);
+    border-radius: 10px;
+    margin-block-end: 40px;
+    flex-wrap: wrap;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+    padding-block-end: 40px;
+    background-size: contain ;
+}
+
+fieldset {
+    border: 5px solid rgb(255, 255, 255);
+    border-radius: 10px;
+}
+
+input {
+    padding: 5px;
+    margin: 3px;
+    border: 1px solid white;
+    border-radius: 7px;
+    background-color: rgb(255, 255, 255);
+    cursor:pointer;
+}
+
+legend {
+    font-size: 18px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 5%;
+}
+
+table, th, td {
+    margin-left: 33%;
+    width: 30vw;
+    border: solid 3px rgb(255, 255, 255);
+    border-collapse: collapse;
+}
+
+th {
+    color: rgb(255, 255, 255);
+}
+
+#btn {
+    margin-top: 1%;
+    border: solid white 2px;
+    background: transparent;
+    color: white;
+    font-size: 18px;
+    font-family: "Concert One";
+}
+
+::-webkit-scrollbar {
+    background: rgba(0, 0, 0, 0);
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgb(255, 255, 255);
+    border: 1px solid white;
+    border-radius: 15px;
+}
+

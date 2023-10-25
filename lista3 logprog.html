@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista 3</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+
+</head>
+<body>
+    <div class="identificação">
+        <img src="iesb-removebg-preview.png" alt="logo" width="200px">
+        <H1>LISTA 3</H1>
+        <p>
+        <b>nome:</b> GUSTAVO DUARTE SAMPAIO<br>
+        </p>
+    </div>
+    
+    <div class="enunciado">
+    <p>24.   faça um algoritmo que receba "N" números e mostre positivo, negativo ou zero para cada um deles.</p>
+    <form>
+        <fieldset>
+            <legend>exe 24</legend>
+            <label for="quantidade">Digite quantos números serão analisados</label><br>
+            <input type="number" id="quantidade"><br>
+            <label for="numeros">Digite os números separados por vírgula</label><br>
+            <input type="text" id="numeros"><br>
+            <input type="button" id="btn" value="Mostrar" onclick="mostrarNumeros()"/><br>
+            <div id="resultado"></div>
+        </fieldset>
+    </form>
+    <br>
+    </div>
+    <div class="enunciado">
+    <p>25.   faça um algoritmo que leia dois números e indetifique se eles são iguais ou diferentes, 
+        caso ele seja igual imrpima uma mensagem dizendo que são iguais, se forem diferentes informe qual número é
+         o maior.</p>
+    <form>
+        <fieldset>
+            <legend>exe 25</legend>
+            <label for="numero">Digite um número</label><br>
+            <input type="number" id="n1"><br>
+            <label for="numero">Digite outro número</label><br>
+            <input type="number" id="n2"><br>
+            <input type="button" id="btn" value="Mostrar" onclick="mostrar()"/>
+            <br/><p id= "display"></p>
+        </fieldset>
+    </form>
+    </div>
+    <br>
+    <div class="enunciado">
+    <p>26. faça um algoritmo que leia um número de 0 a 5 e escreva por extenso. caso o número esteja fora dos requisitados mostre uma mensagem "inválido"</p>
+    <form>
+        <fieldset>
+            <legend>exe 26</legend>
+            <label for="numero">Digite um número de 0 a 5</label><br>
+            <input type="number" id="n26"><br>
+            <input type="button" id="btn" value="Mostrar" onclick="escreverNumero()"/>
+            <br/><p id= "display2"></p>
+        </fieldset>
+    </form>
+    </div>
+    <br>
+    <div class="enunciado">
+    <p>27. A concessionária de veículos "CARANGO" está vendendo os seus veículos com desconto.faça um algoritmo que calcule e exiba o valor do desconto e o valor a ser pago pelo cliente. O desconto deverá ser calculado sobre o valor do veículo de acordo com o combustível (álcool - 25% gasolina  - 21% ou diesel - 14%). Com valor do veículo zero encerra entrada de dados.</p>
+    <form>
+        <fieldset>
+            <legend>exe 27</legend>
+            <label>Digite o valor do carro</label><br>
+            <input type="number" id="n27"><br>
+            <label> Selecione uma das opções </label><br>
+            <input type="radio" name="comb" id="alcool" value="0.25"> <label
+            for="alcool">Álcool</label><br>
+            <input type="radio" name="comb" id="gasolina" value="0.21"> <label
+            for="gasolina">Gasolina</label><br>
+            <input type="radio" name="comb" id="diesel" value="0.14"> <label
+            for="diesel">Diesel</label><br>
+            <input type="button" id="btn" value="mostrar" onclick="calcular()"/>
+            <br/><p id= "display3"></p>
+        </fieldset>
+    </form>
+    </div>
+    <br>
+    <div class="enunciado">
+    <p>28. Escreva um algoritmo para uma empressa que decide dar um reajuste a seus 584 funcionários de acordo com os seguintes critérios: <br> a) 50% para aqueles que ganham menos do que três salários mínimos <br> b) 20% para aqueles que ganham entre três até dez salários mínimo <br> c) 15% para aqueles que ganham acima de dez até vinte salário mínimo <br> d) 10% para os demais funcionários</p>
+    <form>
+        <fieldset>
+            <legend>exe 28</legend>
+            <label>Digite seu nome</label><br>
+            <input type="text" id="name"><br>
+            <label>Digite seu salário</label><br>
+            <input type="number" id="salario"><br>
+            <input type="button" id="btn" value="mostrar" onclick="calcularSalario()"/>
+            <br><p id="display4"></p>
+
+        </fieldset>
+    </form>
+    </div>
+    <br>
+    <div class="enunciado">
+    <p>29. Faça um algoritmo que receba o número do mês e o mês correspondente. Valide mês inválido</p>
+    <form>
+        <fieldset>
+            <legend>exe 29</legend>
+            <label>Digite um número</label><br>
+            <input type="number" id="Numeromes"><br>
+            <input type="button" id="btn" value="mostrar" onclick="mostrarMes()"/><br>
+            <p id="display7"></p>
+
+        </fieldset>
+    </form>
+    </div>
+    <div class="enunciado">
+    <p>30. Faça um algoritmo que receba a idade, nome, sexo e o salário fixo de um funcionário. Mostre o nome e o salário líquido</p>
+    <table>
+        <tr>
+            <th>sexo</th>
+            <th>idade</th>
+            <th>abono</th>
+        </tr>
+        <tr>
+            <th rowspan="2">M</th>
+            <th>>=30</th>
+            <th>100,00</th>
+        </tr>
+        <tr>
+            <th> <=30</th>
+            <th>50,00</th>
+        </tr>
+        <tr>
+            <th rowspan="2">F</th>
+            <th>>=30</th>
+            <th>200,00</th>
+        </tr>
+        <tr>
+            <th> <=30</th>
+            <th>80,00</th>
+        </tr>
+    </table>
+    <form>
+        <fieldset>
+            <legend>exe 30</legend>
+            <label>Digite seu nome</label><br>
+            <input type="text" id="nome1"><br>
+            <label>Digite seu salário</label><br>
+            <input type="number" id="salariofix"><br>
+            <label>Digite seu sexo (M) (F)</label><br>
+            <input type="text" id="sexo"><br>
+            <label>Digite sua idade</label><br>
+            <input type="number" id="idade"><br>
+            <input type="button" id="btn" value="mostrar" onclick="mostrarSalario()"/>
+            <br><p id="display5"></p>
+
+        </fieldset>
+    </form>
+    </div>
+    <br>
+    <div class="enunciado">
+    <p>31. Escreva um algoritmo que leia três valores distintos e os escreva em ordem decrescente</p>
+    <form>
+        <fieldset>
+            <legend>exe 31</legend>
+            <label>Digite um número</label><br>
+            <input type="number" id="numero1"><br>
+            <label>Digite um número</label><br>
+            <input type="number" id="numero2"><br>
+            <label>Digite um número</label><br>
+            <input type="number" id="numero3"><br>
+            <input type="button" id="btn" value="mostrar" onclick="mostrarOrdem()"/>
+            <br><p id="display6"></p>
+
+        </fieldset>
+    </form>
+    </div>
+    <br>
+    <div class="enunciado">
+    <p>32. Dados três valores A, B e C em que A e B são números reais e C é um caractere, pede-se para imprimir o resultado de A por B se C for um símbolo de operador aritmético: Caso contrário deve ser impressa uma mensagem de operador não definido.</p>
+    <form>
+        <fieldset>
+            <legend>exe 32</legend>
+            <label>Digite o valor de A</label><br>
+            <input type="number" id="A"><br>
+            <label>Digite o valor de B</label><br>
+            <input type="number" id="B"><br>
+            <label>Digite o caractere</label><br>
+            <input type="text" id="OPERADOR"><br>
+            <input type="button" id="btn" value="mostrar" onclick="mostrarOperacao()"/>
+            <br><p id="display8"></p>
+
+        </fieldset>
+    </form>
+    </div>
+    <br>
+    <div class="enunciado">
+    <p>33. Escreva um algoritmo que leia três valores inteiros e verifique se eles podem ser os lados de um triângulo. Se
+        forem, Informar qual o tipo de triângulo que eles formam: equilátero, Isósceles ou escaleno.<br>
+        Propriedade: o comprimento de cada lado de um triângulo é menor do que a soma dos comprimentos dos outros
+        dois lados<br>
+        :<br>
+        Triângulo Equilátero: aquele que tem os comprimentos dos três lados iguais:<br>
+        Triângulo Isóscele: aquele que tem os comprimentos de dois lados iguais. Portanto, todo triângulo equilátero é
+        também isóscele<br>
+        Triângulo Escaleno aquele que tem os comprimentos de seus três lados diferentes.</p>
+    <form>
+        <fieldset>
+            <legend>exe 33</legend>
+            <label>Digite o comprimento do lado A</label><br>
+            <input type="number" id="ladoA"><br>
+            <label>Digite o comprimento do lado B</label><br>
+            <input type="number" id="ladoB"><br>
+            <label>Digite o comprimento do lado C</label><br>
+            <input type="number" id="ladoC"><br>
+            <input type="button" id="btn" value="mostrar" onclick="mostrarTriangulo()"/>
+            <br><p id="display9"></p>
+
+        </fieldset>
+    </form>
+    </div>
+    <br>
+    <div class="enunciado">
+    <p>34. A escola "APRENDER" faz o pagamento de seus professores por hora/aula. Faça um algoritmo que calacule o salário do professor com os seguintes critérios <br> Professor Nível 1 R$12,00 por hora/aula<br>  Professor Nível 2 R$17,00 por hora/aula<br>  Professor Nível 3 R$25,00 por hora/aula<br></p>
+    <form>
+        <fieldset>
+            <legend>exe 34</legend>
+            <label>Digite quantas horas por dia o professor trabalha</label><br>
+            <input type="number" id="horaPro"><br>
+            <label> Selecione uma das opções </label><br>
+            <input type="radio" name="nivel" id="prof1" value="12"> <label
+            for="prof1">Professor nível 1</label><br>
+            <input type="radio" name="nivel" id="prof2" value="17"> <label
+            for="prof2">Professor nível 2</label><br>
+            <input type="radio" name="nivel" id="prof3" value="25"> <label
+            for="prof3">Professor nível 3</label><br>
+            <input type="button" id="btn" value="mostrar" onclick="exe34()"/>
+            <br><p id="display10"></p>
+        </fieldset>
+    </form>
+    </div>
+    <br>
+    <div class="enunciado">
+    <p>35. Elabore um algoritmo que dada a idade de um nadador, classifique-o em uma das seguintes categorias:<br> Infantil A = 5 - 7 anos<br> Infantil B = 8 - 10 anos<br> Juvenil A = 11 - 13 anos<br> Juvenil B = 14 - 17<br> Sênior = 18 - 25 anos<br> Apresentar a mensagem "Fora da faix etária" caso a idade não corresponda</p>
+    <form>
+        <fieldset>
+            <legend>exe 35</legend>
+            <label>Digite a idade do nadador</label><br>
+            <input type="number" id="nadador"><br>
+            <input type="button" id="btn" value="mostrar" onclick="exe35()"/>
+            <br><p id="display11"></p>
+        </fieldset>
+    </form>
+    </div>
+        <div class="enunciado">
+    <p>36. Faça um algoritmo que calcule o valor da conta de luz de uma pessoa. Sabe-se que o calulo do valor da conta segue a lista a baixo:<br> </p>
+    <form>
+        <fieldset>
+            <legend>exe 36</legend>
+            <label> Selecione uma das opções abaixo</label><br><br>
+            <input type="radio" name="energia" id="casa" value="0.60"> <label
+            for="prof1">Residência</label><br>
+            <input type="radio" name="energia" id="comercio" value="0.48"> <label
+            for="prof2">Comércio</label><br>
+            <input type="radio" name="energia" id="industria" value="1.29"> <label
+            for="prof3">Industria</label><br><br>
+            <input type="button" id="btn" value="mostrar" onclick="exe36()"/>
+            <br><p id="display12"></p>
+        </fieldset>
+    </form>
+    </div>
+        <div class="enunciado">
+    <p>37. Faça um algoritmo que leia o nome, o sexo, o sexo, a altura e a idade de uma pessoa. Calcule o peso ideal de acordo com as seguintes características da pessoa.</p>
+    <form>
+        <fieldset>
+            <legend>exe 37</legend>
+            <label>Digite seu nome</label><br>
+            <input type="text" id="NomePeso"><br>
+            <label>Digite seu sexo M ou F</label><br>
+            <input type="text" id="SEXO"><br>
+            <label>Digite sua Idade</label><br>
+            <input type="number" id="IDADE"><br>
+            <label>Digite sua altura</label><br>
+            <input type="number" id="ALTURA"><br>
+            <input type="button" id="btn" value="mostrar" onclick="exe37()"/><br>
+            <p id="display13"></p>
+        </fieldset>
+    </form>
+    </div>
+</body>
+</html>
